@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="names">
+        <item>金币10000</item>
+        <item>红包¥100</item>
+        <item>苹果X</item>
+        <item>红包¥1.0</item>
+        <item>华为mete10</item>
+        <item>红包¥5.0</item>
+        <item>OPPO r11s</item>
+        <item>金币10</item>
+    </string-array>
+
+    <string-array name="icons">
+        <item>luck_icon1</item>
+        <item>luck_icon2</item>
+        <item>luck_icon3</item>
+        <item>luck_icon4</item>
+        <item>luck_icon5</item>
+        <item>luck_icon6</item>
+        <item>luck_icon7</item>
+        <item>luck_icon8</item>
+
+    </string-array>
+</resources>

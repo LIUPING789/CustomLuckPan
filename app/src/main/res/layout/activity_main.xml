@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:luckpan="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.knight.customluckpan.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backgroud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/backgroud_1" />
+
+        <com.knight.customluckpan.weight.LuckPanLayout
+            android:id="@+id/luckpan_layout"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@android:color/transparent">
+
+            <com.knight.customluckpan.weight.CustomRotateLuckPan
+                android:id="@+id/rotatePan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                luckpan:icons="@array/icons"
+                luckpan:names="@array/names"
+                luckpan:pannum="8" />
+
+            <ImageView
+                android:id="@+id/go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="rotation"
+                android:src="@mipmap/go"
+                android:tag="startbtn"
+                tools:ignore="OnClick" />
+        </com.knight.customluckpan.weight.LuckPanLayout>
+    </RelativeLayout>
+</RelativeLayout>
